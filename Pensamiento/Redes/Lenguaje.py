@@ -1,5 +1,5 @@
 import os
-
+#from Librerias.Propias.CrearNodos import rutas
 check= False
 
 def Control():
@@ -34,3 +34,5 @@ def Cargar():
 def ErrorExistente():
     return None
 
+def leerSignos():
+    return None
