@@ -4,7 +4,8 @@ from Memoria import Guardados
 
 Salida= "exit"
 Eleccion=" "
-
+k1=0
+k2=0
 def Inicio(base):
     Eleccion=base
     while Eleccion != Salida:
@@ -56,6 +57,11 @@ def Resultados(Valor, Vdado):
     Resultado="El resultado del d "+ str(Vdado) +" es: "+ str(Numero)
     print(Resultado)
     Guardados.Comparar(Numero, "Dados")
+    afirmativos=["SI","S","YES", "Y"]
     Inicial = input("¿quieres continuar?")
+    if (Inicial.upper in afirmativos):
+        Inicio(Inicial)
+    else:
+        Menues.Inicio()
     Inicio(Inicial)
     

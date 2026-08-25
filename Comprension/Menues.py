@@ -1,4 +1,4 @@
-from os import system as S
+import os
 from Comprension import Ingresos
 from Logica import Dices
 
@@ -11,7 +11,7 @@ def Inicio():
 
 def bucle():
     while respuesta!=salida:
-        S("cls")
+        os("cls")
         print("Escriba una de las opciones")
         L = input("Ayuda, 1,2,3")
         opciones(L)

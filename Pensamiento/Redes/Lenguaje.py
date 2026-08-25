@@ -13,7 +13,8 @@ def Control():
 def Inicial():
     Control()
     while check == True:
-        return None
+        LeerDiccionario()
+        check=False
     return None
 
 def CrearDiccionario():
@@ -28,9 +29,19 @@ def ampliar(Palabra):
             
 def Cargar():
     with open("Diccionario.txt", "r") as Dicc:
+        contenido=Dicc.read()
         Carga= [Linea.strip().split(",") for Linea in Dicc]
-        return Carga    
-    
+        return set (Carga)  
+
+def LeerDiccionario():
+    existente = Cargar()
+    palabrasRevisar= existente.split()
+    for p in palabrasRevisar:
+        pLimpia = p.strip(",.").lower()
+        if pLimpia not in existente:
+            ampliar(pLimpia)
+            existente.add(pLimpia)
+
 def ErrorExistente():
     return None
 
