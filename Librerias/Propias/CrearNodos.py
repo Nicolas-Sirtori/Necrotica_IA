@@ -12,6 +12,7 @@ def creardor():
         clave = "Nodo"+str(limite)
         Conjunto[clave]=[0, "", 2]
         limite = limite-1
+    return Conjunto
 
 def cargadorNodos():
     creardor()
@@ -21,15 +22,8 @@ def cargadorNodos():
         va= [1, Cargar, 1]
         Lectura.append(va[1])
         i=i+1
+    
 
-def recorrido():
-    None
-
-def Mezclado(): 
-    None
-
-def guardado():
-    None
 
 #esquema del nodo => "valor", "contenido", "estado 0-1-2"
 #estado 0 = desaprobado, 1 aprobado, 2 vacio

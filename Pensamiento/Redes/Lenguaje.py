@@ -10,10 +10,10 @@ def Control():
        CrearDiccionario()
        
 
-def Inicial():
+def Inicial(valor):
     Control()
     while check == True:
-        LeerDiccionario()
+        LeerDiccionario(valor)
         check=False
     return None
 
@@ -33,9 +33,9 @@ def Cargar():
         Carga= [Linea.strip().split(",") for Linea in Dicc]
         return set (Carga)  
 
-def LeerDiccionario():
+def LeerDiccionario(valor):
     existente = Cargar()
-    palabrasRevisar= existente.split()
+    palabrasRevisar= valor.split()
     for p in palabrasRevisar:
         pLimpia = p.strip(",.").lower()
         if pLimpia not in existente:
