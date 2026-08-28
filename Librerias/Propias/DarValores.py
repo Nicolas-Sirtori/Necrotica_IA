@@ -7,6 +7,7 @@ def implemten():
     Nodos= creardor()
     while e in range(len(Nodos)):
         Nodos[e][1]= Cargar()[e]
+        Nodos[e][2]= 1
 
     return Nodos
 
@@ -16,9 +17,13 @@ def combinacionLetras():
         if(Alternar()>0):
             NComb1[e][1] = Nodos[e + 1*Alternar()][1] + " " + Nodos[e][1]
             NComb1[e][0]= n+1
+            Nodos[e][0] = NComb1[e][0]
+            Nodos[e][1]= NComb1[e][1]
         else:
             NComb1[e][1] = Nodos[e][1] + " " + Nodos[e + 1*Alternar()][1]
             NComb1[e][0]= n+1
+            Nodos[e][0] = NComb1[e][0]
+            Nodos[e][1]= NComb1[e][1]
     n=n+1
 
 def CombinacionNum():
