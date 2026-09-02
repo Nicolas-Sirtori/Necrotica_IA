@@ -26,4 +26,6 @@ def opciones(Recurso):
             Ingresos.lectura()
         case "2":
             Dices.Seleccion()
+        case "3":
+            None
             

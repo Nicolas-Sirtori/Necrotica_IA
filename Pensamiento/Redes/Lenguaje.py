@@ -41,7 +41,10 @@ def LeerDiccionario(valor):
         if pLimpia not in existente:
             ampliar(pLimpia)
             existente.add(pLimpia)
-
+    
+def recuperar(valor):
+    existente = Cargar()
+    return existente
 def ErrorExistente():
     return None
 

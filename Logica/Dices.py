@@ -63,5 +63,4 @@ def Resultados(Valor, Vdado):
         Inicio(Inicial)
     else:
         Menues.Inicio()
-    Inicio(Inicial)
     
