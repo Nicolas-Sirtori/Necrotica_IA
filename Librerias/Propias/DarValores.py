@@ -14,7 +14,7 @@ def implemten():
 def implemtenVa():
     Nodos= creardor()
     while e in range(len(Nodos)):
-        Nodos[e][1]= ""
+        Nodos[e][1]= 0
         Nodos[e][2]= 1
 
     return Nodos
@@ -32,6 +32,7 @@ def combinacionLetras():
             Nodos[e][0] = NComb1[e][0]
             Nodos[e][1]= NComb1[e][1]
     n=n+1
+    return NComb1
 
 def CombinacionNum():
     while e in 2*range(len(implemten())):
@@ -56,7 +57,7 @@ def GenerarMatriz(valor1, valor2):
     k=0
     while i <= valor1:
         while k<=valor2:
-            implemten()
+            implemtenVa()
             Nodos[k][1]=0
             NBeta[k]=Nodos[k]
         k = k-k

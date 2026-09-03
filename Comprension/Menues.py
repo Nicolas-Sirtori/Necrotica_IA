@@ -24,7 +24,7 @@ def opciones(Recurso):
                 print(Listado[i])
         case "1":
             Ingresos.lectura()
-        case "2":
+        case "2": 
             Dices.Seleccion()
         case "3":
             None
