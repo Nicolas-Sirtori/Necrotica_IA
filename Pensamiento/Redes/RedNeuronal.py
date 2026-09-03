@@ -1,3 +1,5 @@
+from Librerias.Propias import *
+
 Mensaje=[]
 Recuerdo=""
 Validacion=" "

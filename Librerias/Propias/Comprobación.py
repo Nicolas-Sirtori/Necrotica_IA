@@ -1,5 +1,5 @@
 from DarValores import *
-tipo = ""
+tipo = []
 razon = [""]
 def leerNodo():
     for i in range(Nodos):
@@ -7,8 +7,10 @@ def leerNodo():
         i=i+1
 
 
-def ComprobacionDeTipo():
+def ComprobacionDeTipo(valor):
     match tipo:
         case "Pregunta":
-            return None
-        
+            tipo=list(valor)
+            if "?" in tipo & "¿" in tipo:
+                return True
+
