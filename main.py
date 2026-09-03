@@ -1,6 +1,6 @@
 #region Materiales
 from Comprension import Menues
-from os import system
+import os
 #endregion 
 
 #region variables
@@ -16,7 +16,7 @@ salida="exit"
 def main():
     L=input("¿desea iniciar?: ")
     while L != salida:
-        system("cls")
+        os.system("cls")
         Valorfinal=Menues.bucle()
         respuesta="el resultado es: "+ str(Valorfinal)
         print(respuesta)

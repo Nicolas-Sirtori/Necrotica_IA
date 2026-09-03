@@ -1,6 +1,6 @@
 from CrearNodos import *
 import random
-Nodos, NComb1, NBeta=[]
+Nodos= NComb1= NBeta=[]
 n=0
 e=0
 def implemten():
